@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Event Dicoding</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="finished">Finished</string>
+    <string name="favorite">Favorite</string>
+    <string name="image_logo">Image Logo</string>
+    <string name="daftar">Daftar</string>
+    <string name="titel">Titel</string>
+    <string name="time">Time</string>
+    <string name="kuota">Kuota</string>
+    <string name="quota">%d tersisa</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="setting">Setting</string>
+</resources>
