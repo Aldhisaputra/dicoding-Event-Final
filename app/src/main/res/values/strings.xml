@@ -11,4 +11,9 @@
     <string name="quota">%d tersisa</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="setting">Setting</string>
+    <string name="nama_penyelengggara">Nama Penyelengggara</string>
+    <string name="nama_owner">Nama Owner</string>
+    <string name="waktu_acara">Waktu Acara</string>
+    <string name="jam_acara">Jam Acara</string>
+    <string name="deskripsi">Deskripsi</string>
 </resources>

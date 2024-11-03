@@ -68,6 +68,8 @@ class DetailActivity : AppCompatActivity() {
         with(binding) {
             Name.text = event.name
             Kuota.text = getString(R.string.quota, event.quota - event.registrants)
+            NameOwner.text = event.ownerName
+            TimeBegin.text = event.beginTime
             Deskripsi.text = HtmlCompat.fromHtml(event.description, HtmlCompat.FROM_HTML_MODE_LEGACY)
             MediaCover.loadImage(event.imageLogo)
         }
@@ -77,7 +79,9 @@ class DetailActivity : AppCompatActivity() {
         with(binding) {
             Name.text = event.name
             Kuota.text = getString(R.string.quota, event.quota - event.registrants)
-            Deskripsi.text = event.description
+            NameOwner.text = event.ownerName
+            TimeBegin.text = event.beginTime
+            Deskripsi.text = HtmlCompat.fromHtml(event.description, HtmlCompat.FROM_HTML_MODE_LEGACY)
             MediaCover.loadImage(event.imageLogo)
         }
     }
@@ -105,7 +109,7 @@ class DetailActivity : AppCompatActivity() {
 
     private fun saveFavoriteStatus(event: ListEventsItem) {
         if (favorite) {
-            favoriteEventRepo.insertEvent(EntityEvent(event.id.toString(), event.name, event.imageLogo,event.quota,event.description,event.registrants))
+            favoriteEventRepo.insertEvent(EntityEvent(event.id.toString(), event.name, event.imageLogo,event.quota,event.ownerName,event.beginTime,event.description,event.registrants))
         } else {
             favoriteEventRepo.getFavoriteEventById(event.id.toString()).observe(this) { favoriteEvent ->
                 favoriteEvent?.let { favoriteEventRepo.delete(it) }

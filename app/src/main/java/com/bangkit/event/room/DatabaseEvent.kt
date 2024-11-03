@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.bangkit.event.entity.EntityEvent
 
-@Database(entities = [EntityEvent::class], version = 1)
+@Database(entities = [EntityEvent::class], version = 5)
 abstract class DatabaseEvent : RoomDatabase() {
 
     abstract fun daoEvent(): DaoEvent

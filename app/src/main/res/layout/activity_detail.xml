@@ -63,6 +63,7 @@
                 android:text="@string/kuota"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:paddingLeft="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/Name" />
 
@@ -79,15 +80,69 @@
                 app:layout_constraintTop_toBottomOf="@id/Name" />
 
             <TextView
+                android:id="@+id/OwnerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/nama_penyelengggara"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Luota"
+                tools:text="Owner Name" />
+
+            <TextView
+                android:id="@+id/NameOwner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/nama_owner"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/OwnerName"
+                tools:text="Owner Detail Name" />
+
+            <TextView
+                android:id="@+id/BeginTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/waktu_acara"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NameOwner"
+                tools:text="Begin Time" />
+
+            <TextView
+                android:id="@+id/TimeBegin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/jam_acara"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BeginTime"
+                tools:text="20:00 AM" />
+
+            <TextView
                 android:id="@+id/Deskripsi"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Deskripsi"
+                android:text="@string/deskripsi"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/Luota" />
+                app:layout_constraintTop_toBottomOf="@id/TimeBegin" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

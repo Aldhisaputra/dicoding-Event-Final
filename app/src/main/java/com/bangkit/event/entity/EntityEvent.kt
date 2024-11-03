@@ -23,11 +23,20 @@ class EntityEvent (
     @ColumnInfo(name = "quota")
     val quota: Int,
 
+    @ColumnInfo(name = "ownerName")
+    val ownerName: String? = "",
+
+    @ColumnInfo(name = "beginTime")
+    val beginTime: String? = "",
+
+
     @ColumnInfo(name = "description")
-    val description: String? = null,
+    val description: String ="",
 
     @ColumnInfo(name = "registrants")
-    val registrants: Int
+    val registrants: Int,
+
+
 
 
 
